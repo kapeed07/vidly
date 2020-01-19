@@ -6,8 +6,7 @@ import {
 } from 'antd';
 
 import Like from "./common/like"
-import TableHeader from "./common/tableHeader"
-import TableBody from "./common/tableBody"
+import Table from "./common/table"
 
 
 class MoviesTable extends Component {
@@ -32,16 +31,12 @@ class MoviesTable extends Component {
     
     return (
       <table>
-        <TableHeader
+        <Table
           sortColumn={ sortColumn }
           handleMovieSort={ handleMovieSort }
-          columns={ columns }>
-        </TableHeader>
-
-        <TableBody
           data={ movies }
           columns={ columns }>
-        </TableBody>
+        </Table>
       </table>
     );
   }
