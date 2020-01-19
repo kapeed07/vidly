@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dcd30109b5acfee400d39809a19f133",
+    "revision": "7fc8cb93273258c65b8808337b248a2a",
     "url": "/vidly/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vidly/static/css/2.ff8bd605.chunk.css"
   },
   {
-    "revision": "6c290fd2a66eb9884d80",
+    "revision": "d872e5239666c2255b5d",
     "url": "/vidly/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vidly/static/js/2.101286e2.chunk.js.LICENSE"
   },
   {
-    "revision": "6c290fd2a66eb9884d80",
-    "url": "/vidly/static/js/main.ec10b6a3.chunk.js"
+    "revision": "d872e5239666c2255b5d",
+    "url": "/vidly/static/js/main.d549c971.chunk.js"
   },
   {
     "revision": "28c30ed05b03eddd56ea",
