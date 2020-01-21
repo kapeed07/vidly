@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/vidly/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/vidly/static/js/main.df79ebb5.chunk.js",
-    "main.js.map": "/vidly/static/js/main.df79ebb5.chunk.js.map",
+    "main.js": "/vidly/static/js/main.68d8106c.chunk.js",
+    "main.js.map": "/vidly/static/js/main.68d8106c.chunk.js.map",
     "runtime-main.js": "/vidly/static/js/runtime-main.66905aeb.js",
     "runtime-main.js.map": "/vidly/static/js/runtime-main.66905aeb.js.map",
     "static/css/2.ff8bd605.chunk.css": "/vidly/static/css/2.ff8bd605.chunk.css",
-    "static/js/2.b0d0f902.chunk.js": "/vidly/static/js/2.b0d0f902.chunk.js",
-    "static/js/2.b0d0f902.chunk.js.map": "/vidly/static/js/2.b0d0f902.chunk.js.map",
+    "static/js/2.51aaaf2d.chunk.js": "/vidly/static/js/2.51aaaf2d.chunk.js",
+    "static/js/2.51aaaf2d.chunk.js.map": "/vidly/static/js/2.51aaaf2d.chunk.js.map",
     "index.html": "/vidly/index.html",
-    "precache-manifest.066b3acae0345f556e2cd93745cd7b9a.js": "/vidly/precache-manifest.066b3acae0345f556e2cd93745cd7b9a.js",
+    "precache-manifest.b651b1c63bed27a10ad1e0edd4be7434.js": "/vidly/precache-manifest.b651b1c63bed27a10ad1e0edd4be7434.js",
     "service-worker.js": "/vidly/service-worker.js",
     "static/css/2.ff8bd605.chunk.css.map": "/vidly/static/css/2.ff8bd605.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/vidly/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.b0d0f902.chunk.js.LICENSE": "/vidly/static/js/2.b0d0f902.chunk.js.LICENSE"
+    "static/js/2.51aaaf2d.chunk.js.LICENSE": "/vidly/static/js/2.51aaaf2d.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.66905aeb.js",
     "static/css/2.ff8bd605.chunk.css",
-    "static/js/2.b0d0f902.chunk.js",
+    "static/js/2.51aaaf2d.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.df79ebb5.chunk.js"
+    "static/js/main.68d8106c.chunk.js"
   ]
 }
