@@ -88,29 +88,37 @@ class Movies extends Component {
 
     return (
       <React.Fragment>
-      <p>Showing { totalCount } movies in the database.</p>
-      <List
-        size="small"
-        bordered
-        dataSource={genres}
-        renderItem={item => (
-          <List.Item onClick={ () => this.handleGenreSelect(item) }>{ item.name }</List.Item>
-        )}>
-      </List>
-      <MoviesTable
-        movies={ movies }
-        toggleLike={ this.toggleLike }
-        sortColumn={ sortColumn }
-        handleMovieSort={ this.handleMovieSort }
-        handleMovieDelete={ this.handleMovieDelete }>
-      </MoviesTable>
-      <Pagination
-        pageSize={ this.state.pageSize }
-        defaultCurrent={1}
-        hideOnSinglePage={ true }
-        onChange={ this.handlePageChange }
-        total={ totalCount }>
-      </Pagination>
+        <div className="flex-col">
+          <p>Showing { totalCount } movies in the database.</p>
+          <div className="flex flex-row">
+            <div className="w-1/5">
+              <List
+                size="small"
+                bordered
+                dataSource={genres}
+                renderItem={item => (
+                  <List.Item onClick={ () => this.handleGenreSelect(item) }>{ item.name }</List.Item>
+                )}>
+              </List>
+            </div>
+            <div className="w-4/5">
+              <MoviesTable
+                movies={ movies }
+                toggleLike={ this.toggleLike }
+                sortColumn={ sortColumn }
+                handleMovieSort={ this.handleMovieSort }
+                handleMovieDelete={ this.handleMovieDelete }>
+              </MoviesTable>
+            </div>
+          </div>
+          <Pagination
+            pageSize={ this.state.pageSize }
+            defaultCurrent={1}
+            hideOnSinglePage={ true }
+            onChange={ this.handlePageChange }
+            total={ totalCount }>
+          </Pagination>
+        </div>
       </React.Fragment>
     );
   }

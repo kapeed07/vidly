@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import {
   Button,
@@ -15,7 +16,7 @@ class MoviesTable extends Component {
   render() {
     
     const columns = [
-      { path: "title", label: "Title" },
+    { path: "title", label: "Title", content: movie => <Link to={`/movies/${movie._id}`}>{ movie.title }</Link> },
       { path: "genre.name", label: "Genre" },
       { path: "numberInStock", content: movie => (<Tag color="geekblue">{ movie.numberInStock }</Tag>) },
       { path: "dailyRentalRate", label: "Rate "},
