@@ -9,6 +9,7 @@ import Customers from './components/customers';
 import NotFound from './components/not-found';
 
 function App() {
+  console.log(process.env.PUBLIC_URL)
   return (
     <Row>
       <NavBar />
