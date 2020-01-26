@@ -13,6 +13,22 @@
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 
+/*!
+        * The buffer module from node.js, for the browser.
+        *
+        * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+        * @license  MIT
+        */
+
+/*!
+         * The buffer module from node.js, for the browser.
+         *
+         * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+         * @license  MIT
+         */
+
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+
 /*
 object-assign
 (c) Sindre Sorhus
