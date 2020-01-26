@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-import { Menu, Icon } from "antd";
+import { Menu } from "antd";
 
 
 class NavBar extends Component {
@@ -28,6 +28,11 @@ class NavBar extends Component {
         <Menu.Item>
           <Link to="/rentals">
             Rentals
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link to="/login">
+            Login
           </Link>
         </Menu.Item>
       </Menu>
