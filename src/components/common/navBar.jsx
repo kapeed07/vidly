@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { Menu } from "antd";
 
-
 class NavBar extends Component {
   state = {  }
   render() { 
@@ -33,6 +32,11 @@ class NavBar extends Component {
         <Menu.Item>
           <Link to="/login">
             Login
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link to="/register">
+            Register
           </Link>
         </Menu.Item>
       </Menu>

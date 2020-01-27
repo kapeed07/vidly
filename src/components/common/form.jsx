@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Joi from "joi-browser";
-
 class Form extends Component {
   state = { 
     data : {},
@@ -9,27 +8,17 @@ class Form extends Component {
   }
 
   validate = () => {
-
     let result = Joi.validate(this.state.data, this.schema, {
       abortEarly: false
     })
-    // console.log(result)
-    if(!result.error)
+    if(!result.error) {
       return null;
-    
+    }
     let errors = {};
     result.error.details.map(item => {
       return errors[item.path[0]] = item.message
     })
-
     return errors;
-    // const errors = {};
-    // const { data } = this.state;
-    // if (data.username.trim() === '')
-    //   errors.username = "Username is required."
-    // if (data.password.trim() === '')
-    //   errors.password = "Password is required."
-    // return Object.keys(errors).length === 0 ? null : errors;
   }
   
   validProperty = ({ name, value }) => {
@@ -38,19 +27,10 @@ class Form extends Component {
     const { error } = Joi.validate(obj, schema)
 
     return error ? error.details[0].message: null;
-    // if(name === "username")
-    //   if(value.trim().length === 0)
-    //     return "Username is required."
-    // if(name === "password")
-    //   if(value.trim().length === 0)
-    //     return "Password is required."
   }
 
   handleSubmit = (e) => {
     const errors = this.validate();
-
-    // const errorMessage = this.validProperty(e);
-
     this.setState({ errors })
 
     if (this.state.errors) {
@@ -58,20 +38,9 @@ class Form extends Component {
     } else {
       this.doSubmit()
     }
-    
-
-
-    
-    
-    // .form.validateFields((err, values) => {
-    //   if (!err) {
-    //     console.log('Received values of form: ', values);
-    //   }
-    // });
   };
 
   handleChange = (e) => {
-    
     const errorMessage = this.validProperty(e.currentTarget);
     let { errors } = this.state;
     errors[e.currentTarget.name] = errorMessage;
@@ -89,8 +58,25 @@ class Form extends Component {
       )
   }
 
+  renderSelect = (name, label, options) => {
+    return (
+      <div>
+        <select onChange={ this.handleChange } name={name} placeholder={label}>
+          <option value="">Select genre</option>
+          {options.map(option => (
+            <option key={option._id} value={option._id}>
+              {option.name}
+            </option>
+          ))}
+        </select>
+        <p>
+          { this.state.errors ? this.state.errors[name] : "" }
+        </p>
+      </div>
+      )
+  }
+
   renderInput = (name, label, type = 'text') => {
-    
     return (
       <div>
         <input type={type} onChange={ this.handleChange } name={name} placeholder={label} />
@@ -100,8 +86,7 @@ class Form extends Component {
       </div>
       )
   }
-
-
+  
   render() { 
     return (
       <React.Fragment></React.Fragment>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import _ from 'loadsh';
-
+import { Link } from 'react-router-dom'
 import {
   Pagination,
-  List
+  List,
+  Button
 } from 'antd';
 
 import MoviesTable from "./moviesTable"
@@ -102,6 +103,11 @@ class Movies extends Component {
               </List>
             </div>
             <div className="w-4/5">
+              <Button type="primary">
+                <Link to="/movies/new">
+                  Add New
+                </Link>
+              </Button>
               <MoviesTable
                 movies={ movies }
                 toggleLike={ this.toggleLike }
