@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vidly/precache-manifest.07d0091cc2e20855e48c50a8d05c955a.js"
+  "/vidly/precache-manifest.dafb96fa1ac0eb45f7a990839d29415e.js"
 );
 
 self.addEventListener('message', (event) => {
